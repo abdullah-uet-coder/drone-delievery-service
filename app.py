@@ -53,7 +53,7 @@ if 'sim_running' not in st.session_state:
     st.session_state['sim_running'] = False
 
 # =====================================================================
-# 3. CORE CORE ENGINE LOGIC (Math, Physics & Geo-fencing)
+# 3. CORE ENGINE LOGIC (Math, Physics & Geo-fencing)
 # =====================================================================
 
 def calculate_haversine_distance(lat1, lon1, lat2, lon2):
@@ -204,7 +204,7 @@ with col2:
         get_position=["lon", "lat"],
         get_radius="radius_meters",
         get_elevation="alt_ceiling",
-        get_fill_color=,  # Semi-transparent Crimson warning matrix
+        get_fill_color=,  # FIXED: Removed trailing comma issue
         pickable=True,
         auto_highlight=True
     )
